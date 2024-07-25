@@ -1,0 +1,250 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Portfolio</title>
+    <link rel="stylesheet" href="style.css">
+    <script src="https://kit.fontawesome.com/1977ef0786.js" crossorigin="anonymous"></script>
+</head>
+<body>
+    <div id="header">
+        <nav>
+            <img src="image/logo.png" class="logo">
+            <ul id="sidemenu">
+                <i class="fa-solid fa-xmark" onclick="closemenu()"></i>
+                <li><a href="#header">Home</a></li>
+                <li><a href="#about">About</a></li>
+                <li><a href="#portfolio">Project</a></li>
+                <li><a href="#contact">Contact</a></li>
+            </ul>
+            <i class="fa-solid fa-bars" onclick="openmenu()"></i>
+        </nav>
+        <div class="header-text">
+            <p>Front-End Developer</p>
+            <h1>Hi, I am <span>Suwetha.K</span></h1>
+        </div>
+    </div>
+    <div id="about">
+        <div class="container">
+            <div class="row">
+                <div class="about-col-1">
+                    <img src="image/user.png">
+                </div>
+                <div class="about-col-2">
+                    <h1 class="sub-title">About me</h1><br>
+                    <p>I am a front-end developer with a passion for creating beautiful and functional websites. I have experience working with HTML, CSS, JavaScript, and the React.js framework. My goal is to bring your ideas to life and create engaging user experiences that make your business stand out.</p>
+                    <div class="tab-titles">
+                        <p class="tab-links active-link" onclick="opentab('skills', event)">Skills</p>
+                        <p class="tab-links" onclick="opentab('experience', event)">Experience</p>
+                        <p class="tab-links" onclick="opentab('education', event)">Education</p>
+                    </div>
+                    <div class="tab-contents active-tab" id="skills">
+                        <ul>
+                            <li>
+                                <p>HTML <span>85%</span></p>
+                                <div class="progress-bar">
+                                    <div class="progress" style="width: 85%;"></div>
+                                </div>
+                            </li>
+                            <li>
+                                <p>CSS <span>80%</span></p>
+                                <div class="progress-bar">
+                                    <div class="progress" style="width: 80%;"></div>
+                                </div>
+                            </li>
+                            <li>
+                                <p>JavaScript <span>70%</span></p>
+                                <div class="progress-bar">
+                                    <div class="progress" style="width: 70%;"></div>
+                                </div>
+                            </li>
+                            <li>
+                                <p>Python <span>70%</span></p>
+                                <div class="progress-bar">
+                                    <div class="progress" style="width: 70%;"></div>
+                                </div>
+                            </li>
+                            <li>
+                                <p>ReactJS <span>60%</span></p>
+                                <div class="progress-bar">
+                                    <div class="progress" style="width: 60%;"></div>
+                                </div>
+                            </li>
+                            <li>
+                                <p>NodeJS <span>50%</span></p>
+                                <div class="progress-bar">
+                                    <div class="progress" style="width: 50%;"></div>
+                                </div>
+                            </li>
+                            <li>
+                                <p>Flutter <span>65%</span></p>
+                                <div class="progress-bar">
+                                    <div class="progress" style="width: 65%;"></div>
+                                </div>
+                            </li>
+                            <li>
+                                <p>Dart <span>60%</span></p>
+                                <div class="progress-bar">
+                                    <div class="progress" style="width: 60%;"></div>
+                                </div>
+                            </li>
+                        </ul>
+                    </div>
+                    <div class="tab-contents" id="experience">
+                        <ul>
+                            <li><span>Dec-2023-Jun-2024</span><br><br>Software Developer intern</li>
+                        </ul>
+                    </div>
+                    <div class="tab-contents" id="education">
+                        <ul>
+                            <li><span>2019-2022</span><br><br>BCA-Shrimati Indira Gandhi College Trichy</li>
+                            <li><span>2022-2024</span><br><br>MCA-SNS College of Technology Coimbatore</li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!----------project----------->
+    <div id="portfolio">
+        <div class="container">
+            <h1 class="sub-title">My Projects</h1>
+            <div class="project-list">
+                <div class="project">
+                    <div class="project-card">
+                        <h2>Calculator</h2>
+                        <p>A simple calculator built with HTML, CSS, and JavaScript</p>
+                        <button class="learn-more" onclick="navigateTo('https://suwethakumar.github.io/calculator/')">Learn More</button>
+                    </div>
+                </div>
+                <div class="project">
+                    <div class="project-card">
+                        <h2>Password Generator</h2>
+                        <p>A tool that generates Password and allows users to Copy them</p>
+                        <button class="learn-more" onclick="navigateTo('https://suwethakumar.github.io/Password-Generator/')">Learn More</button>
+                    </div>
+                </div>
+                <div class="project hide">
+                    <div class="project-card">
+                        <h2>Form Validation</h2>
+                        <p>A simple Form Validation built with HTML, CSS, and JavaScript</p>
+                        <button class="learn-more" onclick="navigateTo('https://suwethakumar.github.io/Form-Validation/')">Learn More</button>
+                    </div>
+                </div>
+                <div class="project hide">
+                    <div class="project-card">
+                        <h2>To-do List</h2>
+                        <p>A simple To-do List built with HTML, CSS, and JavaScript</p>
+                        <button class="learn-more"  onclick="navigateTo('https://suwethakumar.github.io/Todolist/')">Learn More</button>
+                    </div>
+                </div>
+                <div class="project hide">
+                    <div class="project-card">
+                        <h2>ImageSearchEngine</h2>
+                        <p>A tool that generates Image and allows users to Download them.</p>
+                        <button class="learn-more"  onclick="navigateTo('https://suwethakumar.github.io/ImageSearchEngine/')">Learn More</button>
+                    </div>
+                </div>
+                <div class="project hide">
+                    <div class="project-card">
+                        <h2>Music Player</h2>
+                        <p>A simple music player built using JavaScript with play/pause functions.</p>
+                        <button class="learn-more" onclick="navigateTo('https://suwethakumar.github.io/musicplayer/')" >Learn More</button>
+                    </div>
+                </div>
+            </div>
+            <button class="show-more-btn" onclick="showMoreProjects()">Show More</button>
+        </div>
+    </div>
+    <!----------------------contact-------------------------->
+    <div id="contact">
+        <div class="container">
+            <div class="row">
+                <div class="contact-left">
+                    <h1 class="sub-title">Contact Me</h1>
+                    <p> <i class="fa-solid fa-paper-plane"></i> <a href="mailto:suwethakumar843@gmail.com">suwethakumar843@gmail.com</a></p>
+                    <a href="image/SUWETHA K_RESUME.pdf" download class="btn btn2">Download CV</a>
+                </div>
+                <div class="contact-right">
+                    <form name="submit-to-google-sheet">
+                        <input type="text" name="Name" placeholder="Your Name" required>
+                        <input type="email" name="Email" placeholder="Your Email" required>
+                        <textarea name="Message" rows="6" placeholder="Your Message"></textarea>
+                        <button type="submit" class="btn btn2">Submit</button>
+                    </form>
+                    <span id="msg"></span>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <script>
+        function opentab(tabname, event) {
+            var tablinks = document.getElementsByClassName("tab-links");
+            var tabcontents = document.getElementsByClassName("tab-contents");
+            for (var tablink of tablinks) {
+                tablink.classList.remove("active-link");
+            }
+            for (var tabcontent of tabcontents) {
+                tabcontent.classList.remove("active-tab");
+            }
+            event.currentTarget.classList.add("active-link");
+            var selectedTabContent = document.getElementById(tabname);
+            if (selectedTabContent) {
+                selectedTabContent.classList.add("active-tab");
+            } else {
+                console.error('Tab content with id "' + tabname + '" not found.');
+            }
+        }
+        function navigateTo(url){
+            window.location.href = url;
+        }
+    </script>
+    <script>
+        var sidemenu= document.getElementById("sidemenu");
+
+        function openmenu(){
+            sidemenu.style.right = "0";
+        }
+        function closemenu(){
+            sidemenu.style.right = "-200px";
+        }
+    </script>
+    <script>
+        const scriptURL = 'https://script.google.com/macros/s/AKfycbxq1OLwUHSoe-3Avi_mBgI7mNejVkCdq5kz_PrXcFkE8AVSRHtMXNamK_TGrRkJneR0Jw/exec'
+        const form = document.forms['submit-to-google-sheet']
+        const msg=document.getElementById("msg")
+      
+        form.addEventListener('submit', e => {
+          e.preventDefault()
+          fetch(scriptURL, { method: 'POST', body: new FormData(form)})
+            .then(response => {
+                msg.innerHTML = "Message Send Successfully"
+                setTimeout(function(){
+                    msg.innerHTML = ""
+                },5000)
+                form.reset()
+            })
+            .catch(error => console.error('Error!', error.message))
+        })
+      </script>
+      <script>
+        function showMoreProjects() {
+            var hiddenProjects = document.querySelectorAll('.project.hide');
+            hiddenProjects.forEach(function(project) {
+                project.classList.remove('hide');
+                project.classList.add('show');
+            });
+    
+            var showMoreBtn = document.querySelector('.show-more-btn');
+            showMoreBtn.style.display = 'none';
+        }
+    
+        function navigateTo(url) {
+            window.location.href = url;
+        }
+    </script>
+    
+</body>
+</html>
